@@ -1,17 +1,17 @@
 <template>
   <div style="display: flex; height: fit-content;">
     <img :src="image" alt="" width="40" height="40">
-    <GitButton :img="star" :count="stars" word="Star"/>
-    <GitButton :img="forked" :count="forks" word="Fork"/>
+    <GitButton img="" :count="stars" word="Star"/>
+    <GitButton img="" :count="forks" word="Fork"/>
   </div>
 </template>
 
 
 <script>
 import Axios from "axios"
-import GitButton from "./GitButton"
-import forked from './icon/repo-forked.svg'
-import star from './icon/star.svg'
+import GitButton from "./GitButton.vue"
+// import forked from './icon/repo-forked.svg'
+// import star from './icon/star.svg'
 export default {
   props: {
     repo: {
@@ -24,8 +24,8 @@ export default {
       image: "",
       stars: 0,
       forks: 0,
-      star,
-      forked
+      // star,
+      // forked
     }
   },
   created () {
