@@ -5,7 +5,7 @@
         {{word}}
       </div>
       <div class="bt-right">
-        {{count}}
+        {{count | numberWithCommas}}
       </div>
     </div>
 </template>
